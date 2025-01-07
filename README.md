@@ -71,5 +71,9 @@ Le **nombre d’écrans** a un impact légèrement plus important sur les entré
   - Erreur moyenne absolue (MAE) - Entraînement : 34,165.79
   - Erreur moyenne absolue (MAE) - Test : 36,544.95
   - Coefficient de détermination (R²) - Test : 0.78
+  
+  ### Réponse à la question 5
+Les performances du modèle montrent que les variables `écrans` et `fauteuils` contribuent significativement à la prédiction des entrées annuelles, avec un coefficient de détermination (R²) de 0.78 sur les données de test de 2018-2021. Cependant, la performance diminue légèrement lorsque le modèle est testé sur les données de 2022 (R² = 0.63). Cela peut indiquer des variations non expliquées par ces variables ou des changements dans les tendances des années récentes. Ainsi, bien que `écrans` et `fauteuils` soient des prédicteurs raisonnables, d'autres variables pourraient améliorer les performances du modèle.
+
 
 
