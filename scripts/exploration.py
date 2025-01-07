@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Charger les données
-file_path = "../data/salle_de_cinema_ile-de-france.csv"
+file_path = "C:/Users/KCHELHAOUI/OneDrive - VINCI Construction/Documents/CinemaDataAnalysis/data/salle_de_cinema_ile-de-france.csv"
 try:
     data = pd.read_csv(file_path, sep=";", encoding="utf-8")
 except FileNotFoundError:
