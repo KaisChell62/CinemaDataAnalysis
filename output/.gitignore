@@ -1,0 +1,10 @@
+# Ignorer les fichiers temporaires et de configuration
+__pycache__/
+.vscode/
+*.log
+
+# Ignorer les fichiers CSV
+*.csv
+
+# Inclure tout ce qui est dans le dossier output/
+!output/
