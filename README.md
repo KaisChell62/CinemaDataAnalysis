@@ -61,14 +61,15 @@ Le **nombre d’écrans** a un impact légèrement plus important sur les entré
    git clone <URL_du_dépôt>
    cd CinemaDataAnalysis
 
-   ### Exercice 4 : Modèle prédictif des entrées annuelles  
--  ** Division des données en deux sous-ensembles (2018-2021) : **
-  - **Variables explicatives** : écrans, fauteuils, population de la commune.
-  - **Variable cible** : entrées annuelles.
-- Entraînement d’un modèle de régression linéaire.
-- Évaluation des performances :
-  - Coefficient de détermination (R²).
-  - Erreur moyenne absolue (MAE).
-- Test du modèle sur les données de 2022 et comparaison des prédictions avec les valeurs réelles.
-- Visualisation : Prédictions vs Valeurs réelles (2022).
+### Exercice 4 : Modèle prédictif des entrées annuelles (5 pts)
+- **Traitement des données :**
+  - Ajout d'une colonne `année` au dataset si elle n'était pas présente.
+  - Remplacement des valeurs manquantes dans `entrées 2021` par la moyenne.
+- **Modèle entraîné :**
+  - Régression linéaire avec les variables explicatives : `écrans`, `fauteuils`, et `population de la commune`.
+- **Performances :**
+  - Erreur moyenne absolue (MAE) - Entraînement : 34,165.79
+  - Erreur moyenne absolue (MAE) - Test : 36,544.95
+  - Coefficient de détermination (R²) - Test : 0.78
+
 
