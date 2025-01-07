@@ -3,7 +3,9 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # Charger les données
-file_path = "C:/Users/KCHELHAOUI/OneDrive - VINCI Construction/Documents/CinemaDataAnalysis/data/salle_de_cinema_ile-de-france.csv"data = pd.read_csv(file_path, sep=";", encoding="utf-8")
+file_path = "C:/Users/KCHELHAOUI/OneDrive - VINCI Construction/Documents/CinemaDataAnalysis/data/salle_de_cinema_ile-de-france.csv"
+data = pd.read_csv(file_path, sep=";", encoding="utf-8")
+
 
 # Filtrer les données pour ne garder que l'année 2022
 data_2022 = data[['écrans', 'fauteuils', 'entrées 2022']].dropna()
