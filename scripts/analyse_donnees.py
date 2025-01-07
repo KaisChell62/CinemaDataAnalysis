@@ -17,3 +17,15 @@ print("3 meilleures régions :")
 print(region_data.head(3))
 print("\n3 pires régions :")
 print(region_data.tail(3))
+
+# Créer un graphique à barres
+plt.figure(figsize=(10, 6))
+plt.bar(region_data['région administrative'], region_data['Entrées moyennes par fauteuil'], color="skyblue")
+plt.xlabel("Région administrative")
+plt.ylabel("Entrées moyennes par fauteuil")
+plt.title("Entrées moyennes par fauteuil pour chaque région (2022)")
+plt.xticks(rotation=45, ha="right")
+plt.tight_layout()
+plt.savefig("../output/graphique_entrees_par_fauteuil.png")
+plt.show()
+
